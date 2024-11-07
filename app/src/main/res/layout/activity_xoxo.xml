@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".xoxo">
+
+    <RelativeLayout
+        android:id="@+id/menuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple">
+        <ImageView
+            android:id="@+id/backBtn"
+            android:onClick="onBackMenu"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/baseline_arrow_circle_left_24"
+            android:background="@color/purple"
+            />
+
+        <ImageView
+            android:id="@+id/settingBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentEnd="true"
+            android:onClick="onSettingsClick"
+            android:src="@drawable/settings_icon"
+            tools:ignore="OnClkick"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/menuBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/humanPoints"
+            android:layout_margin="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="00"
+            android:gravity="center"
+            android:textSize="35sp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/PCPoints"
+            android:layout_margin="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="00"
+            android:gravity="center"
+            android:textSize="35sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="yt"
+        android:textSize="28sp"
+        />
+
+    <TableLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:textSize="40sp"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:textSize="40sp"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:textSize="40sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:textSize="40sp"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn5"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:textSize="40sp"/>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn6"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:textSize="40sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="40sp">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn7"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:textSize="40sp"/>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn8"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:textSize="40sp"/>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn9"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:textSize="40sp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="clickRestart"
+        android:textSize="40sp"
+        android:text="@string/newGame"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".xoxo">
+
+    <RelativeLayout
+        android:id="@+id/menuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple">
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            
+            android:background="@color/purple"
+            android:onClick="onBackMenu"
+            android:src="@drawable/baseline_arrow_circle_left_24" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/Reset"
+        android:textSize="28sp"
+        />
+
+
+
+</RelativeLayout>

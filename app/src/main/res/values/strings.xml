@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">xoxoxo</string>
+
+    <string name="winner_msg">U WINDOWS</string>
+
+    <string name="pc_winner_msg">DOWN HOW U CAN LOSE?</string>
+
+    <string name="newGame">NEW GAME</string>
+
+    <string name="draw_msg">DRAW</string>
+
+    <string name="Reset">Reset</string>
+</resources>
